@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --c-primaria: #FFFFFF;
+    --c-secundaria: #C0C0C0;
+    --c-botao: #167BF7;
+    --c-back: #00030C;
+    --fnt-principal: 'Inter';
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--c-back);
+    color: var(--c-primaria);
+    font-family: var(--fnt-principal);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.principal {
+    background-image: url("../assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container-caixa {
+    margin: 0 6em;
+}
+
+.container-caixa-botao {
+    text-decoration: none;
+    color: var(--c-primaria);
+    background-color: var(--c-botao);
+    border-radius: 5px;
+    padding: 1em;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.botao-secundario {
+    background-color: transparent;
+    border: 2px solid var(--c-primaria);
+}
+
+.container-caixa-aviso {
+    font-size: 0.75rem;
+    color: var(--c-secundaria);
+}
+
+.container-caixa-titulo {
+    font-size: 1,75rem;
+    font-weight: 700;
+}
+
+.container-caixa-imagem {
+    margin: 1.375em 0 3.375em 0;
+}
+
+.secundario-imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao-titulo {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--c-primaria);
+    margin-bottom: 0.1em;
+}
+
+.descricao-texto {
+    color: var(--c-secundaria)
+}
+
+.secundario-botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container-descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos-lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos-titulo {
+    font-size: 3rem;
+    color: var(--c-primaria);
+}
+
+.lista-item {
+    font-size: 2rem;
+    color: var(--c-primaria);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape-lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.lista-link a {
+    text-decoration: none;
+    color: var(--c-primaria);
+    margin-left: 1em;
+}
+
+.lista-link a:hover {
+    color: var(--c-botao);
+}
+
+.lista-link a:active {
+    color: pink;
+}
+
+.rodape-texto {
+    font-size: 0.875rem;
+    color: var(--c-secundaria);
+    margin: 2em 0;
+}
